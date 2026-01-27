@@ -6,7 +6,7 @@ Welcome to the digital home of **Weird Wanderess**—a personal blog dedicated t
 
 ## 🌐 Live Preview
 The "Coming Soon" page is currently live at:
-**[https://charlenecordero.github.io/weird-wanderess/](https://YOUR-USERNAME.github.io/weird-wanderess/)**
+**[https://charlenecordero.github.io/weird-wanderess/](https://charlenecordero.github.io/weird-wanderess/)**
 
 
 ---
