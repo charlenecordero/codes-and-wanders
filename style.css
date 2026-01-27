@@ -1,0 +1,72 @@
+/* Variables for easy theme swapping */
+:root {
+    --bg-color: #0f0f0f;
+    --accent-color: #d4ff00; 
+    --text-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    z-index: 1; /* Sits above the overlay */
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: -2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.highlight {
+    color: var(--accent-color);
+    font-style: italic;
+}
+
+p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+.status-box {
+    border: 1px solid var(--accent-color);
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: blink 1.5s infinite;
+}
+
+/* The "Weird" Background Effect */
+.overlay {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    background: radial-gradient(circle, transparent 20%, var(--bg-color) 90%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
