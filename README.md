@@ -1,12 +1,12 @@
-# 🧭 Weird Wanderess
+# 🧭 Codes and Wanders
 
-> **Status:** 🚧 Under Construction / Exploring...
+> **Status:** 🚧 Under Construction / Coding...
 
-Welcome to the digital home of **Weird Wanderess**—a personal blog dedicated to offbeat exploration, strange discoveries, and the beauty of the unexplored.
+Welcome to the digital home of **Codes and Wanders**—a personal blog dedicated to the intersection of technology, travel, and creative exploration.
 
 ## 🌐 Live Preview
 The "Coming Soon" page is currently live at:
-**[https://charlenecordero.github.io/weird-wanderess/](https://charlenecordero.github.io/weird-wanderess/)**
+**[https://charlenecordero.github.io/codes-and-wanders/](https://charlenecordero.github.io/codes-and-wanders/)**
 
 
 ---
@@ -21,7 +21,7 @@ This project is built to be lightweight and fast:
 
 ## 📂 Project Structure
 ```text
-weird-wanderess/
+codes-and-wanders/
 ├── index.html   # Main structure
-├── style.css    # Custom "weird" styling & animations
+├── style.css    # Custom styling & animations
 └── README.md    # You are here!
