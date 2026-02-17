@@ -5,7 +5,7 @@
 Welcome to the digital home of **Codes and Wanders**—a personal blog dedicated to the intersection of technology, travel, and creative exploration.
 
 ## 🌐 Live Preview
-The "Coming Soon" page is currently live at:
+The page is currently live at:
 **[https://charlenecordero.github.io/codes-and-wanders/](https://charlenecordero.github.io/codes-and-wanders/)**
 
 
