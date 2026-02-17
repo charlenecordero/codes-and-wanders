@@ -47,6 +47,6 @@ title: Home
         {% endfor %}
     </div>
     <div class="view-all-container">
-        <a href="{{ " /archive.html" | relative_url }}" class="btn-secondary">View All Posts</a>
+        <a href="{{ "/archive.html" | relative_url }}" class="btn-secondary">View All Posts</a>
     </div>
 </section>
