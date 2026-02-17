@@ -1,14 +1,15 @@
 title: Codes and Wanders
 description: Exploring the digital landscape and the world beyond. A journey through code, travel, and curiosity.
-url: "" 
-baseurl: "" 
+
+url: "https://charlenecordero.github.io"
+baseurl: "/codes-and-wanders"
 
 permalink: /:categories/:year/:month/:day/:title/
 
 markdown: kramdown
 highlighter: rouge
 
-exclude: 
+exclude:
   - node_modules
   - package.json
   - package-lock.json
