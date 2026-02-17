@@ -1,0 +1,21 @@
+<header class="site-header">
+    <div class="header-container">
+        <a href="{{ " /" | relative_url }}" class="logo">
+            <span class="logo-main">Codes</span> <span class="logo-accent">and</span> <span
+                class="logo-wanders">Wanders</span>
+        </a>
+
+        <nav class="site-nav">
+            <ul class="nav-list">
+                {% for item in site.navigation %}
+                <li class="nav-item">
+                    <a href="{{ item.url | relative_url }}" class="nav-link">{{ item.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+
+        <!-- Mobile Menu Toggle (to be implemented in CSS/JS if needed, or simple pure CSS) -->
+        <div class="mobile-menu-toggle">☰</div>
+    </div>
+</header>

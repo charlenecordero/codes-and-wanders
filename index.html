@@ -1,20 +1,52 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Home
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codes and Wanders | Coming Soon</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+<section class="hero">
+    <h1><span class="highlight-code">Codes</span> and <span class="highlight-wander">Wanders</span></h1>
+    <p class="subtitle">Exploring the digital landscape and the world beyond.</p>
+</section>
 
-<body>
-    <div class="overlay"></div>
-    <div class="container">
-        <h1>Codes and <span class="highlight">Wanders</span></h1>
-        <p>Exploring the digital landscape and the world beyond. A journey through code, travel, and curiosity.</p>
-        <div class="status-box">SYSTEM STATUS: CODING... </div>
+<section class="featured-posts">
+    <h2 class="section-title">Featured Stories</h2>
+    <div class="post-grid">
+        {% assign featured_posts = site.posts | where: "featured", true %}
+        {% for post in featured_posts limit: 1 %}
+        <article class="post-card featured">
+            <div class="post-card-content">
+                <div class="post-meta">
+                    <span class="category">{{ post.categories | first }}</span>
+                    <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
+                </div>
+                <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+                <a href="{{ post.url | relative_url }}" class="read-more">Read Article &rarr;</a>
+            </div>
+        </article>
+        {% else %}
+        <p>No featured posts yet.</p>
+        {% endfor %}
     </div>
-</body>
+</section>
 
-</html>
+<section class="latest-posts">
+    <h2 class="section-title">Latest Updates</h2>
+    <div class="post-grid">
+        {% for post in site.posts limit:3 %}
+        <article class="post-card">
+            <div class="post-card-content">
+                <div class="post-meta">
+                    <span class="category">{{ post.categories | first }}</span>
+                    <span class="date">{{ post.date | date: "%b %d, %Y" }}</span>
+                </div>
+                <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                <p>{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+    <div class="view-all-container">
+        <a href="{{ " /archive.html" | relative_url }}" class="btn-secondary">View All Posts</a>
+    </div>
+</section>

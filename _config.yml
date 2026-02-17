@@ -1,0 +1,28 @@
+title: Codes and Wanders
+description: Exploring the digital landscape and the world beyond. A journey through code, travel, and curiosity.
+url: "" 
+baseurl: "" 
+
+permalink: /:categories/:year/:month/:day/:title/
+
+markdown: kramdown
+highlighter: rouge
+
+exclude: 
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Gemfile
+  - Gemfile.lock
+
+navigation:
+  - title: Tech
+    url: /category/tech
+  - title: Arts
+    url: /category/arts
+  - title: Music
+    url: /category/music
+  - title: Travels
+    url: /category/travels
+  - title: Finance
+    url: /category/finance
